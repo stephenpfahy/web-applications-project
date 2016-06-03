@@ -1,0 +1,2 @@
+# web-applications-project
+This is a repository for the project for the Web Applications module for the Higher Diploma in Science (Software Development). It is a client based website which was built using HTML5, CSS3 and JavaScript. The website is connected to a relational database via PHP  which inserts, reads, updates, and deletes information entered by the user from the website into the relational database. The relational database used was created for the Database Design &amp; Development Module.
