@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="css/completesite.css" type="text/css" rel="stylesheet" />
+<title>South Dublin Housing Council Repairs Page</title>
+
+<style>
+p#type{text-align:center;}
+</style>
+
+</head>
+
+<body>
+
+
+
+
+<div id="header">
+<h1>SOUTH DUBLIN HOUSING COUNCIL</h1>
+</div>
+
+
+
+
+<div id="nav">
+<h2>LINKS</h2>
+<a href="homepage.html" title="GO TO HOMEPAGE">HOMEPAGE</a><br>
+<a href="tenantspage.html" title="GO TO TENANTS PAGE">TENANT</a><br>
+<a href="propertypage.html" title="GO TO PROPERTY PAGE">PROPERTY</a><br>
+<a href="tradesmanpage.html" title="GO TO TRADESMAN PAGE">TRADESMAN</a><br>
+<a href="equipmentpage.html" title="GO TO EQUIPMENT PAGE">EQUIPMENT</a><br>
+</div>
+
+
+
+
+<div id="section">
+<h3>REPAIRS DETAILS</h3>
+
+<p>
+Repairs will be carried out on a property depending on the type of repair, the degree of urgency and if the tenant has paid their rent up to date and is a registered tenant.
+The tenants in a South Dublin County Council homes are responsible for repairs of a non-structural nature. 
+When an employee is deciding if a repair should be carried out, the above points should be taken into consideration. 
+If an employee decides that the repair will be carried out on a property then the repair details should be added to the database.
+It is important that a date and time is selected to carry out the work.
+It is also important that the degree of urgency is stated as this will determine how long it will take to respond to the job needed to be carried out.
+
+<p id="type">
+Type the repair details into the following fields to update our online database.
+</p> 
+
+<form action="php/repairsinsert.php" method="post">
+  REPAIR ID:<br>
+  <input type="number" name="REPAIR_ID" />
+  <br>
+  TYPE:<br>
+  <input type="text" name="TYPE" />
+  <br>
+  URGENCY:<br>
+  <input type="radio" name="URGENCY" value="Emergency" />Emergency
+  <br>  
+  <input type="radio" name="URGENCY" value="Urgent" checked />Urgent
+  <br>
+  <input type="radio" name="URGENCY" value="Routine" />Routine
+  <br>
+  <input type="radio" name="URGENCY" value="Cyclical" />Cyclical
+  <br>  
+  DETAILS:<br>
+  <input type="text" name="DETAILS" />
+  <br>
+  DATE:<br>
+  <input type="date" name="DATE" />
+  <br>
+  TIME:<br>
+  <input type="time" name="TIME" />  
+  <br>
+  TRADESMAN_ID:<br>
+  <input type="number" name="TRADESMAN_ID" />  
+  <br>
+  <input type="submit" />
+</form> 
+
+<p>
+If the details you selected do not enter into our database you have probably entered the wrong data type or you have selected a repair id which exists already in our database. 
+Each repair is given a unique repair id. 
+If the same repair id is inserted into the database and a record already exists with this repair id, your information will not be entered into the database.
+To check and see existing repair id's in our database, click on the 'VIEW EXISTING REPAIR DETAILS IN OUR DATABASE' link below.
+</p>  
+
+<a id="link" href="php/repairsselect.php" title="VIEW EXISTING REPAIR DETAILS">VIEW EXISTING REPAIRS DETAILS IN OUR DATABASE</a>
+<br>
+
+<p>
+Your details you selected may not have worked also because you have selected a tradesman id which is not in our database. 
+To check and see if your tradesman id is in our database click on the 'VIEW EXISTING TRADESMAN DETAILS IN OUR DATABASE' link.
+</p>
+
+<a id="link2" href="php/tradesmanselect.php" title="VIEW EXISTING TRADESMAN DETAILS">VIEW EXISTING TRADESMAN DETAILS IN OUR DATABASE</a>
+<br>
+
+<p>
+If your repair details are already in the database or you want to add them at again at a later stage please click the link below. 
+You can add the repairs details at a later stage by clicking on the 'REPAIRS' link.
+</p>
+
+<a href="propertypage.html" title="GO TO NEXT PAGE">GO TO NEXT PAGE</a><br>
+</div>
+
+
+
+
+<div id="aside">
+<img src=images/house.jpg title="APARTMENTS IN RATHFARNHAM" alt="APARTMENTS IN RATHFARNHAM" width="250" height="142">
+<img src=images/house2.jpg title="APARTMENTS IN THE DOCKS" alt="APARTMENTS IN THE DOCKS" width="250" height="142">
+<img src=images/house3.jpg title="HOUSES IN DONABATE" alt="HOUSES IN DONABATE" width="250" height="142">
+<img src=images/house4.jpg title="HOUSE IN CLONDALKIN" alt="HOUSE IN CLONDALKIN" width="250" height="142">
+<img src=images/house5.jpg title="HOUSE IN RANELAGH" alt="HOUSE IN RANELAGH" width="250" height="142">
+<img src=images/house6.jpg title="HOUSE IN BALLSBRIDGE" alt="HOUSE IN BALLSBRIDGE" width="250" height="142">
+<img src=images/apartment.jpg title="APARTMENT IN BEACON SOUTH" alt="APARTMENT IN BEACON SOUTH" width="250" height="142">
+</div>
+
+
+
+
+<div id="footer">
+<address id="email">EMAIL: housingrepairs@dublincoco.ie</address>
+<address id="southdublincounciladdress">
+SOUTH DUBLIN HOUSING COUNCIL,<br>
+SOUTH DUBLIN COUNTY COUNCIL,<br>
+COUNTY HALL, TALLAGHT, DUBLIN 24, D24 YNN5
+</address>
+<address id="phone">PHONE: +353 1 415 2000</address>
+<br>
+<address>Copyright © southdublinhousingcouncil.ie</address>
+<br>
+
+<img id="wc3" src=images/html5val.png title="WC3 HTML5 VALIDATOR" alt="WC3 HTML5 VALIDATOR" width="100" height="50">
+</div>
+
+
+
+
+</body>
+</html>

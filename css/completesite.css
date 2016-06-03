@@ -1,0 +1,94 @@
+body {
+	font-family: Arial, Verdana, sans-serif; 
+	background-color:#222930;   
+	} 
+#header {
+    background-color:#b30000;
+    color:white;
+    text-align:center;
+    padding:30px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #222930;
+}
+	
+#nav {
+    line-height:30px;
+    background-color:#80ffd4;
+    height:1100px;
+    width:100px;
+    float:left;
+    padding:30px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #222930;
+	}
+#section {
+    width:800px;
+    float:left;
+    padding:10px;
+	text-align:center;
+}
+#aside {
+    line-height:30px;
+    background-color:#80ffd4;
+    height:1150px;
+    width:250px;
+    float:right;
+    padding:5px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #222930;
+}
+#footer {
+    background-color:#b30000;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:30px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #222930;
+} 
+#southdublincounciladdress {
+	text-align:middle;
+}
+#email{
+	text-align:right;
+}
+#phone {
+	text-align:left;
+}
+
+a {
+	color:#6666ff;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: "Agency FB", arial, serif;
+	font-weight: bold;
+	font-size: 60px;
+	color: #ffffff;}
+h2{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #ff6666;}
+h3{
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center-left;
+	color: #ffcc00;}
+h4{
+	color: #FF75A3;}
+h5{
+	color: #BFFF7E;}
+p{
+	color: #FFFFFF;
+	text-align:left;
+	}
+form{
+	color: #ffcc00;
+	font-weight: bold;
+}
+	

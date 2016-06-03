@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="css/completesite.css" type="text/css" rel="stylesheet" />
+<title>South Dublin Housing Council Equipment Page</title>
+
+<style>
+p#type{text-align:center;}
+</style>
+
+</head>
+
+<body>
+
+
+
+
+<div id="header">
+<h1>SOUTH DUBLIN HOUSING COUNCIL</h1>
+</div>
+
+
+
+
+<div id="nav">
+<h2>LINKS</h2>
+<a href="homepage.html" title="GO TO HOMEPAGE">HOMEPAGE</a><br>
+<a href="tenantspage.html" title="GO TO TENANTS PAGE">TENANT</a><br>
+<a href="propertypage.html" title="GO TO PROPERTY PAGE">PROPERTY</a><br>
+<a href="repairspage.html" title="GO REPAIRS PAGE">REPAIRS</a><br>
+<a href="tradesmanpage.html" title="GO TO TRADESMAN PAGE">TRADESMAN</a><br>
+</div>
+
+
+
+
+<div id="section">
+<h3>EQUIPMENT DETAILS</h3>
+
+<p>
+It is important that employees for South Dublin Housing Council have the right equipment to carry out repairs on our properties and that equipment is in excellent repair.
+If the right equipment is available to our employees this insures that the repairs job is carried out to the highest standard. 
+When you use equipment it is important to check it's state of repair to insure that it is fit for it's intended purpose and that it can be replaced if needs be. 
+If new equipment has been purchased for a repairs job it should be entered into the database so that the procurement section in South Dublin Housing Council can have a record of all of our equipment and monitor the state of repair of it's equipment.
+</p>
+
+<p id="type">
+If there has been new equipment been bought or you are using existing equipment not listed in our database, then please type the equipment details into the following fields to update our online database. 
+</p>
+
+<form action="php/equipmentinsert.php" method="post">
+  EQUIPMENT ID:<br>
+  <input type="number" name="EQUIPMENT_ID" />
+  <br>
+  TYPE:<br>
+  <input type="text" name="TYPE" />
+  <br>  
+  DESCRIPTION:<br>
+  <input type="text" name="DESCRIPTION" />
+  <br>
+  VALUE:<br>
+  <input type="number" name="VALUE" step="any"/>
+  <br>
+  INSPECTION DATE:<br>
+  <input type="date" name="INSPECTION_DATE" />  
+  <br>
+  STATE OF REPAIR:<br>
+  <input type="radio" name="STATE_OF_REPAIR" value="Excellent" />Excellent
+  <br>  
+  <input type="radio" name="STATE_OF_REPAIR" value="Good" checked />Good
+  <br>
+  <input type="radio" name="STATE_OF_REPAIR" value="Poor" />Poor
+  <br>
+  <input type="submit" />  
+</form> 
+
+<p>
+If the details you selected do not enter into our database you have probably entered the wrong data type or you have selected a equipment id which exists already in our database. 
+All equipment is given a unique equipment id number. 
+If the same numbers are inserted into the database and a record already exists with this number, your information will not be entered into the database.
+To check and see existing equipment id's in our database, click on the 'VIEW EXISTING EQUIPMENT DETAILS IN OUR DATABASE' link below.
+</p>
+
+<a href="php/equipmentselect.php" title="VIEW EXISTING TENANT DETAILS">VIEW EXISTING EQUIPMENT DETAILS IN OUR DATABASE</a>
+<br>
+
+<p>
+If your equipment details are already in the database or you want to add them at again at a later stage please click the link below. 
+You can add the equipment details at a later stage by clicking on the 'EQUIPMENT' link.
+</p>
+
+<a href="tradesmanpage.html" title="GO TO NEXT PAGE">GO TO NEXT PAGE</a><br>
+</div>
+
+
+
+
+<div id="aside">
+<img src=images/house.jpg title="APARTMENTS IN RATHFARNHAM" alt="APARTMENTS IN RATHFARNHAM" width="250" height="142">
+<img src=images/house2.jpg title="APARTMENTS IN THE DOCKS" alt="APARTMENTS IN THE DOCKS" width="250" height="142">
+<img src=images/house3.jpg title="HOUSES IN DONABATE" alt="HOUSES IN DONABATE" width="250" height="142">
+<img src=images/house4.jpg title="HOUSE IN CLONDALKIN" alt="HOUSE IN CLONDALKIN" width="250" height="142">
+<img src=images/house5.jpg title="HOUSE IN RANELAGH" alt="HOUSE IN RANELAGH" width="250" height="142">
+<img src=images/house6.jpg title="HOUSE IN BALLSBRIDGE" alt="HOUSE IN BALLSBRIDGE" width="250" height="142">
+<img src=images/apartment.jpg title="APARTMENT IN BEACON SOUTH" alt="APARTMENT IN BEACON SOUTH" width="250" height="142">
+</div>
+
+
+
+
+<div id="footer">
+<address id="email">EMAIL: housingrepairs@dublincoco.ie</address>
+<address id="southdublincounciladdress">
+SOUTH DUBLIN HOUSING COUNCIL,<br>
+SOUTH DUBLIN COUNTY COUNCIL,<br>
+COUNTY HALL, TALLAGHT, DUBLIN 24, D24 YNN5
+</address>
+<address id="phone">PHONE: +353 1 415 2000</address>
+<br>
+<address>Copyright © southdublinhousingcouncil.ie</address>
+<br>
+
+<img id="wc3" src=images/html5val.png title="WC3 HTML5 VALIDATOR" alt="WC3 HTML5 VALIDATOR" width="100" height="50">
+</div>
+
+
+
+</body>
+</html>

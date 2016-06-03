@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="css/completesite.css" type="text/css" rel="stylesheet" />
+<title>South Dublin Housing Council Property Page</title>
+
+<style>
+p#type{text-align:center;}
+#map { 
+        width:  250px; 
+        height: 250px; 
+		margin: 0 auto 0 auto; 
+      }
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="header">
+<h1>SOUTH DUBLIN HOUSING COUNCIL</h1>
+</div>
+
+
+
+
+<div id="nav">
+<h2>LINKS</h2>
+<a href="homepage.html" title="GO TO HOMEPAGE">HOMEPAGE</a><br>
+<a href="tenantspage.html" title="GO TO TENANTS PAGE">TENANT</a><br>
+<a href="repairspage.html" title="GO REPAIRS PAGE">REPAIRS</a><br>
+<a href="tradesmanpage.html" title="GO TO TRADESMAN PAGE">TRADESMAN</a><br>
+<a href="equipmentpage.html" title="GO TO EQUIPMENT PAGE">EQUIPMENT</a><br>
+</div>
+
+
+
+
+<div id="section">
+<h3>PROPERTY DETAILS</h3>
+
+<p>
+Approved tenants are asked for their property details which are entered into our database for administration purposes.
+</p>
+
+<p id="type">
+Type the property details into the following fields to update our online database.
+</p>
+
+<form action="php/propertyinsert.php" method="post">
+  POSTCODE:<br>
+  <input type="text" name="POSTCODE" />
+  <br>
+  TENANT_ID:<br>
+  <input type="number" name="TENANT_ID" />
+  <br>
+  ADDRESS:<br>
+  <input type="text" name="ADDRESS" />
+  <br>
+  REPAIR_ID:<br>
+  <input type="number" name="REPAIR_ID" />
+  <br>
+  <input type="submit" />
+  </form> 
+  <br>
+  <a href="https://finder.eircode.ie/#/" target="_blank">If you do not know your postcode / eircode please click here to search for it.</a>
+  <br>
+  
+ <p>
+If the details you selected do not enter into our database you have probably entered the wrong data type or you have selected a postcode which exists already in our database. 
+Each property is given a unique postcode. 
+If the same postcode is inserted into the database and a record already exists with this postcode, your information will not be entered into the database.
+To check and see existing postcode's in our database, click on the 'VIEW EXISTING PROPERTY DETAILS IN OUR DATABASE' link below.
+</p>  
+
+<a href="php/propertyselect.php" title="VIEW EXISTING PROPERTY DETAILS">VIEW EXISTING PROPERTY DETAILS IN OUR DATABASE</a>
+<br>
+
+<p>
+Your details you selected may not have worked also because you have selected a tenant id or a repairs id which is not in our database. 
+To check and see if your tenant id or repair id is in our database click on the 'VIEW EXISTING TENANT DETAILS IN OUR DATABASE' link or the 'VIEW EXISTING REPAIRS DETAILS IN OUR DATABASE' link.
+</p>
+
+<a href="php/tenantselect.php" title="VIEW EXISTING TENANT DETAILS">VIEW EXISTING TENANT DETAILS IN OUR DATABASE</a>  
+<br>
+
+<a href="php/repairsselect.php" title="VIEW EXISTING REPAIR DETAILS">VIEW EXISTING REPAIRS DETAILS IN OUR DATABASE</a>
+<br>
+
+<p>
+If your property details are already in the database or you want to add them at again at a later stage. 
+You can add the property details at a later stage by clicking on the 'PROPERTY' link.
+To go back to our homepage, click the link below.
+</p>
+
+<a href="homepage.html" title="GO TO HOMEPAGE">GO TO HOMEPAGE</a><br>
+
+<h3>MAP OF SOUTH DUBLIN</h3> 
+
+<!--THE JAVASCRIPT CODE WAS COPIED FROM:
+ http://www.javascriptsource.com/image-effects/displaying-a-google-map-by-bradley-l.-jones-150619081017.html#comment_listing 
+ -->
+ 
+<!-- THERE IS AN EXAMPLE OF INLINE CSS STYLING ON THE NEXT LINE-->
+   <p style="text-align:center;">Try searching our link to googlemaps to find your property.</p>
+   <div id="map"></div>
+   <script src="js/map.js"></script>
+</div>
+
+
+
+
+<div id="aside">
+<img src=images/house.jpg title="APARTMENTS IN RATHFARNHAM" alt="APARTMENTS IN RATHFARNHAM" width="250" height="142">
+<img src=images/house2.jpg title="APARTMENTS IN THE DOCKS" alt="APARTMENTS IN THE DOCKS" width="250" height="142">
+<img src=images/house3.jpg title="HOUSES IN DONABATE" alt="HOUSES IN DONABATE" width="250" height="142">
+<img src=images/house4.jpg title="HOUSE IN CLONDALKIN" alt="HOUSE IN CLONDALKIN" width="250" height="142">
+<img src=images/house5.jpg title="HOUSE IN RANELAGH" alt="HOUSE IN RANELAGH" width="250" height="142">
+<img src=images/house6.jpg title="HOUSE IN BALLSBRIDGE" alt="HOUSE IN BALLSBRIDGE" width="250" height="142">
+<img src=images/apartment.jpg title="APARTMENT IN BEACON SOUTH" alt="APARTMENT IN BEACON SOUTH" width="250" height="142">
+</div>
+
+
+
+
+<div id="footer">
+<address id="email">EMAIL: housingrepairs@dublincoco.ie</address>
+<address id="southdublincounciladdress">
+SOUTH DUBLIN HOUSING COUNCIL,<br>
+SOUTH DUBLIN COUNTY COUNCIL,<br>
+COUNTY HALL, TALLAGHT, DUBLIN 24, D24 YNN5
+</address>
+<address id="phone">PHONE: +353 1 415 2000</address>
+<br>
+<address>Copyright © southdublinhousingcouncil.ie</address>
+<br>
+
+<img id="wc3" src=images/html5val.png title="WC3 HTML5 VALIDATOR" alt="WC3 HTML5 VALIDATOR" width="100" height="50">
+
+</div>
+
+
+
+</body>
+</html>

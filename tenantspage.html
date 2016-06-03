@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="css/completesite.css" type="text/css" rel="stylesheet" />
+<title>South Dublin Housing Council Tenant Page</title>
+
+<style>
+p#type {text-align:center;}
+</style>
+</head>
+
+<body>
+
+
+<div id="header">
+<h1>SOUTH DUBLIN HOUSING COUNCIL</h1>
+</div>
+
+
+<div id="nav">
+<h2>LINKS</h2>
+<a href="homepage.html" title="GO TO HOMEPAGE">HOMEPAGE</a><br>
+<a href="propertypage.html" title="GO TO PROPERTY PAGE">PROPERTY</a><br>
+<a href="repairspage.html" title="GO REPAIRS PAGE">REPAIRS</a><br>
+<a href="tradesmanpage.html" title="GO TO TRADESMAN PAGE">TRADESMAN</a><br>
+<a href="equipmentpage.html" title="GO TO EQUIPMENT PAGE">EQUIPMENT</a><br>
+</div>
+
+
+
+<div id="section">
+<h3>TENANT DETAILS</h3>
+<p>
+When a tenant sends in a request for repair the tenant is checked against a valid register number. 
+If they are a registered tenant they may be entitled to a repair to their property. 
+If they are a registered tenant then enter their details into the database.
+</p>
+
+<p id="type">
+Type the tenant details into the following fields to update our online database.
+</p>
+
+ <form action="php/tenantinsert.php" method="post">
+  TENANT ID:<br>
+  <input type="number" name="TENANT_ID" />
+  <br>
+  REGISTER NUMBER:<br>
+  <input type="number" name="REGISTER_NUMBER" />
+  <br>
+  FIRST NAME:<br>
+  <input type="text" name="FIRST_NAME" />
+  <br>
+  LAST NAME:<br>
+  <input type="text" name="LAST_NAME" />
+  <br>
+  CONTACT:<br>
+  <input type="tel" name="CONTACT" />
+  <br>
+  EMAIL:<br>
+  <input type="email" name="EMAIL" />  
+  <br>
+  <input type="submit"/>
+  </form> 
+<br>
+
+<p>
+If the details you selected do not enter into our database you have probably entered the wrong data type or you have selected a tenant id or register number which exists already in our database. 
+Each tenant is given a unique tenant id and register number. 
+If the same numbers are inserted into the database and a record already exists with this number, your information will not be entered into the database.
+To check and see existing tenant id's and register number's in our database, click on the 'VIEW EXISTING TENANT DETAILS IN OUR DATABASE' link below.
+</p>
+
+<a href="php/tenantselect.php" title="VIEW EXISTING TENANT DETAILS">VIEW EXISTING TENANT DETAILS IN OUR DATABASE</a><br>
+<br>
+
+<p>
+If your tenant  details are already in the database or you want to add them at again at a later stage please click the link below. 
+You can add the tenant details at a later stage by clicking on the 'TENANT' link.
+</p>
+
+<a href="equipmentpage.html" title="GO TO NEXT PAGE">GO TO NEXT PAGE</a><br>
+</div>
+
+
+
+<div id="aside">
+<img src=images/house.jpg title="APARTMENTS IN RATHFARNHAM" alt="APARTMENTS IN RATHFARNHAM" width="250" height="142">
+<img src=images/house2.jpg title="APARTMENTS IN THE DOCKS" alt="APARTMENTS IN THE DOCKS" width="250" height="142">
+<img src=images/house3.jpg title="HOUSES IN DONABATE" alt="HOUSES IN DONABATE" width="250" height="142">
+<img src=images/house4.jpg title="HOUSE IN CLONDALKIN" alt="HOUSE IN CLONDALKIN" width="250" height="142">
+<img src=images/house5.jpg title="HOUSE IN RANELAGH" alt="HOUSE IN RANELAGH" width="250" height="142">
+<img src=images/house6.jpg title="HOUSE IN BALLSBRIDGE" alt="HOUSE IN BALLSBRIDGE" width="250" height="142">
+<img src=images/apartment.jpg title="APARTMENT IN BEACON SOUTH" alt="APARTMENT IN BEACON SOUTH" width="250" height="142">
+</div>
+
+
+
+
+<div id="footer">
+<address id="email">EMAIL: housingrepairs@dublincoco.ie</address>
+<address id="southdublincounciladdress">
+SOUTH DUBLIN HOUSING COUNCIL,<br>
+SOUTH DUBLIN COUNTY COUNCIL,<br>
+COUNTY HALL, TALLAGHT, DUBLIN 24, D24 YNN5
+</address>
+<address id="phone">PHONE: +353 1 415 2000</address>
+<br>
+<address>Copyright © southdublinhousingcouncil.ie</address>
+<br>
+
+<img id="wc3" src=images/html5val.png title="WC3 HTML5 VALIDATOR" alt="WC3 HTML5 VALIDATOR" width="100" height="50">
+</div>
+
+
+
+</body>
+</html>
